@@ -26,7 +26,7 @@ Open Data Commons
 
 
 <h3>
-3. Download master dataset
+2. Download master dataset
 </h3>
   Please download the original image and mask dataset <b>3D Liver segmentation</b> from the following link<br>
 
