@@ -15,8 +15,10 @@
 # split_master.py
 # 2023/07/22
 
+# 2024/01/22 Modififed splitting ratio
+
 """
-./Kits19-master
+./Liver-master
  ├─images
  └─masks
 
@@ -24,7 +26,7 @@
 # into test, train and valid dataset.
 
 """
-Kidney-Tumor
+Liver-Tumor
 ├─test
 │  ├─images
 │  └─masks
@@ -49,9 +51,10 @@ def split_master(images_dir, masks_dir, output_dir):
   image_files = glob.glob(images_dir + "/*.jpg")
   random.shuffle(image_files)
   num = len(image_files)
-  num_train = int(num * 0.8)
-  num_valid = int(num * 0.15)
-  num_test  = int(num * 0.05)
+  # 2024/01/22 Modified ratio
+  num_train = int(num * 0.7)
+  num_valid = int(num * 0.2)
+  num_test  = int(num * 0.1)
   print("num_train {}".format(num_train))
   print("num_valid {}".format(num_valid))
   print("num_test  {}".format(num_test ))
@@ -88,9 +91,9 @@ def copy(image_files, masks_dir, dataset_dir):
 
 if __name__ == "__main__":
   try:
-    images_dir = "./Kits19-master/images/"
-    masks_dir  = "./Kits19-master/masks/"
-    output_dir = "./Kidney-Tumor/"
+    images_dir = "./Liver-master/images/"
+    masks_dir  = "./Liver-master/masks/"
+    output_dir = "./Liver-Tumor/"
     if os.path.exists(output_dir):
       shutil.rmtree(output_dir)
     if not os.path.exists(output_dir):

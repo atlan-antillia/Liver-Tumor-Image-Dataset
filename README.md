@@ -1,9 +1,15 @@
-<h2>Liver-Tumor-Image-Dataset (2024/01/21)</h2>
+<h2>Liver-Tumor-Image-Dataset (Updated: 2024/01/23)</h2>
 This is a Liver-Tumor dataset for Image Segmentation and Object Detection.<br>  
-Please see also our first experiment <a href="https://github.com/sarah-antillia/Image-Segmentation-Liver-Tumor">
+On ImageMaskDataset for Segementation, please see also our first experiment <a href="https://github.com/sarah-antillia/Image-Segmentation-Liver-Tumor">
 Image-Segmentation-Liver-Tumor
 </a><br>
+<li>2024/01/23: Updated <a href="./generator/ImageMaskDatasetGenerator.py">ImageMaskDatasetGenerator.py</a> to
+generate the rotated images and mask files</li>
+<li>2024/01/23: Updated 
+<a href="https://drive.google.com/file/d/1P0-fafL1Xs-59D3Flh-pYPmRPOqln32W/view?usp=sharing">
+Liver-Tumor-EfficientDet-Dataset.zip</a></li>
 
+<br>
 <h3>1. Dataset Citatioin</h3>
 <p>
 The image dataset used here has been taken from the following web site.
@@ -69,9 +75,9 @@ By using Python script <a href="./generator/ImageMaskDatasetGenerator.py">ImageM
  we have created <b>Liver-Tumor-master</b> dataset from the <b>Liver-Base</b> dataset.<br>
 The script performs the following image processings.<br>
 <pre>
-1 Create 256x256 square images from original jpg files in <b>Tumor-base/images</b> folder..
-2 Create 256x256 square mask  corresponding to the Tumor-base images files. 
-3 Create flipped and mirrored images and masks of size 256x256 to augment the resized square images and masks.
+1 Create 512x512 square images from original jpg files in <b>Tumor-base/images</b> folder..
+2 Create 512x512 square mask  corresponding to the Tumor-base images files. 
+3 Create rotated, flipped and mirrored images and masks of size 512x512 to augment the resized square images and masks.
 </pre>
 
 The created <b>Liver-Tumor-master</b> dataset has the following folder structure.<br>
