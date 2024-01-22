@@ -1,8 +1,9 @@
 <h2>Liver-Tumor-Image-Dataset (Updated: 2024/01/23)</h2>
 This is a Liver-Tumor dataset for Image Segmentation and Object Detection.<br>  
-On ImageMaskDataset for Segementation, please see also our first experiment <a href="https://github.com/sarah-antillia/Image-Segmentation-Liver-Tumor">
-Image-Segmentation-Liver-Tumor
+On ImageMaskDataset for Segmentation, please see also our first experiment <a href="https://github.com/sarah-antillia/Image-Segmentation-Liver-Tumor">
+Image-Segmentation-Liver-Tumor.
 </a><br>
+<br>
 <li>2024/01/23: Updated <a href="./generator/ImageMaskDatasetGenerator.py">ImageMaskDatasetGenerator.py</a> to
 generate the rotated images and mask files</li>
 <li>2024/01/23: Updated 
